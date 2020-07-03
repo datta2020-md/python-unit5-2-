@@ -1,0 +1,66 @@
+
+
+
+                               Module 5
+ 
+                           python Assignment
+
+                                                 Datta M Pavan
+                                                 321910302020
+
+1.    Differentiate between list, tuples and dictionary.  
+Ans:     
+           List                                Tuple                              Dictionary
+ *List is an ordered collection     *Tuple is an ordered collection   *Dictionary is unordered collection.
+  of items.                          of items.
+
+ *List are mutable object           * Tuple is an immutable object.   *Dictionary are mutable object  
+  i.e. it is possible to add new                                       i.e. it is possible to add new
+  item or delete and item from it.                                     item or delete and item from it.                                  
+
+ *A list, in Python, stores a       *A tuple is though similar to a   *A dictionary is an associative                                                                                                                                                                                                                                                                                                                                                                               
+  sequence of objects in a defined   list, but it’s immutable.         array of key-value pairs. It’s                                                                                                                                                                                                    
+  order. They allow indexing or      Another semantic difference       unordered and requires the keys                                                                                                                              
+  iterating through the list. Next,  between a list and a tuple is     to be hashable.Search operations                                                                                                                                  
+  lists are mutable which you can    “Tuples are heterogeneous data    happen to be faster in a dictionary                                                  
+  modify after creation.             structures whereas the list is    as they use keys for lookups.                                                                                      
+                                     a homogeneous sequence.                                                      
+                                                                                                                                         
+
+
+2.    Write a Python program to iterate over dictionaries using for loops.
+Ans:  d = {'Red': 1, 'Green': 2, 'Blue': 3} 
+      for color_key, value in d.items():
+      print(color_key, 'corresponds to ', d[color_key]) 
+
+
+3.    Write a Python program to sum all the items in a dictionary.
+Ans:  def returnSum(myDict): 
+      sum = 0
+      for i in myDict: 
+      sum = sum + myDict[i] 
+      return sum
+      dict = {'a': 100, 'b':200, 'c':300} 
+      print("Sum :", returnSum(dict))
+
+4.    Write a Python script to concatenate following dictionaries to create a new one. Sample Dictionary: 
+               a. dic1= {1:10, 2:20} 
+               b. dic2= {3:30, 4:40} 
+               c. dic3= {5:50, 6:60}
+Ans:  dic1={1:10, 2:20}
+      dic2={3:30, 4:40}
+      dic3={5:50,6:60}
+      dic4 = {}
+      for d in (dic1, dic2, dic3): dic4.update(d)
+      print(dic4)  
+               
+
+5.    Write a Python script to check whether a given key already exists in a dictionary. 
+Ans:  d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+      def is_key_present(x):
+      if x in d:
+      print('Key is present in the dictionary')
+      else:
+      print('Key is not present in the dictionary')
+      is_key_present(5)
+      is_key_present(9)                                                        
